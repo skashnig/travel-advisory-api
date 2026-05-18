@@ -11,10 +11,6 @@ openweather_key = os.getenv("OPENWEATHER_API_KEY")
 weather_key = os.getenv("WEATHER_API_KEY")
 news_key = os.getenv("NEWS_API_KEY")
 
-class location():
-    city: str
-    country_code: str
-
 @app.get("/advisory/{country_code}/{city}")
 def get_advisory(country_code: str, city_name: str):
 
